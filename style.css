@@ -3,7 +3,7 @@
   width: 375px;
   height: 718px;
   left: 24px;
-  font-family: 'Poppins';
+  font-family: "Poppins", serif;
   font-style: normal;
   display: flex;
 }
@@ -20,7 +20,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070FF;
+  color: mediumslateblue;
 }
 
 .headline {
@@ -28,7 +28,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: darkslategray;
 }
 
 .headline_text {
@@ -43,7 +43,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: cornflowerblue;
 }
 
 .headline_flex {
@@ -51,16 +51,16 @@
 }
 
 .nobull {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .links {
-    display: flex;
+  display: flex;
 }
 
 .social {
-    width: 30px;
-    height: 10px;
+  width: 30px;
+  height: 10px;
 }
 
 .rectangle4 {
@@ -77,5 +77,5 @@
   width: 105px;
   height: 105px;
   left: 323px;
-  top: 152.24px;  
+  top: 152.24px;
 }
