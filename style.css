@@ -63,3 +63,19 @@
     height: 10px;
 }
 
+.rectangle4 {
+  position: absolute;
+  width: 95.58px;
+  height: 22.02px;
+  left: 294px;
+  top: 165.79px;
+  transform: rotate(-30deg);
+}
+
+.elipse3 {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  left: 323px;
+  top: 152.24px;  
+}
