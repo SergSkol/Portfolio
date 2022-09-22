@@ -102,12 +102,7 @@ body {
 .work-container {
   padding-top: 200px;
   display: grid;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   gap: 88px;
-}
-
-.work-item {
-
 }
 
 .work-item-flex {
@@ -117,7 +112,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   border: 1px solid #dfe1e6;
-  border-radius: 16px; 
+  border-radius: 16px;
 }
 
 .work-item-title {
@@ -187,7 +182,7 @@ body {
   font-size: 300%;
   line-height: 24px;
   color: #396df2;
-  background: #ffffff;
+  background: #fff;
   width: 40%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -196,7 +191,7 @@ body {
 }
 
 .work-item-button:hover {
-  color: #ffffff;
+  color: #fff;
   background: #6070ff;
 }
 
@@ -205,7 +200,7 @@ body {
   font-weight: 700;
   font-size: 250%;
   line-height: 150px;
-  color: #000000;
+  color: #000;
 }
 
 .langs {
