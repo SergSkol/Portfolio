@@ -9,51 +9,64 @@ body {
 
 .header {
   position: fixed;
-  padding-left: 3%;
-  width: 90%;
+  padding-left: 6%;
+  padding-top: 58px;
+  width: 78%;
   display: flex;
   flex: 1;
   justify-content: space-between;
 }
 
 .logo {
+  font-style: normal;
   font-weight: 700;
   font-size: 200%;
+  line-height: 20px;
   color: mediumslateblue;
+  text-decoration: none;
 }
 
 .menu_icon {
   position: fixed;
+  font-style: normal;
+  font-weight: 700;
   font-size: 200%;
+  line-height: 20px;
   color: mediumslateblue;
 }
 
 .headline {
-  width: 90%;
+  width: 94%;
   display: flex;
   flex-direction: column;
 }
 
 .headline_top {
-  padding-left: 3%;
+  padding-left: 6%;
+  padding-top: 100px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 700%;
+  line-height: 100%;
   align-items: center;
   color: darkslategray;
 }
 
 .headline_text {
-  padding-left: 3%;
+  padding-left: 6%;
+  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 100%;
   line-height: 24px;
 }
 
 .headline_connect {
-  padding-left: 3%;
+  padding-left: 6%;
+  font-style: normal;
   font-weight: 500;
   font-size: 200%;
+  font-size: 16px;
+  line-height: 24px;
   color: cornflowerblue;
 }
 
@@ -72,9 +85,12 @@ body {
   display: flex;
   justify-content: space-between;
   color: darkslategray;
+  padding-bottom: 325px;
+  padding-left: 6%;
 }
 
 .social {
-  font-size: 200%;
+  font-size: 300%;
   color: darkslategray;
+  text-decoration: none;
 }
