@@ -16,9 +16,7 @@ https://sergskol.github.io/portfolio
 
 Follow the link to open web page.
 
-## Authors
-
-👤 **Author1**
+## Author
 
 - GitHub: [@SergSkol](https://github.com/SergSkol)
 - Twitter: [@sps676](https://twitter.com/sps676)
