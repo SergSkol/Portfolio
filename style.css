@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", "FontAwesome";
+  font-family: "Poppins", "FontAwesome", serif;
   font-style: normal;
   position: absolute;
   background-image: url('./img/header-shapes-mobile.png');
