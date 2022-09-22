@@ -22,7 +22,7 @@ body {
   font-weight: 700;
   font-size: 200%;
   line-height: 20px;
-  color: mediumslateblue;
+  color: #6070ff;
   text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ body {
   font-weight: 700;
   font-size: 200%;
   line-height: 20px;
-  color: mediumslateblue;
+  color: #6070ff;
 }
 
 .headline {
@@ -49,7 +49,7 @@ body {
   font-size: 700%;
   line-height: 100%;
   align-items: center;
-  color: darkslategray;
+  color: #172b4d;
 }
 
 .headline_text {
@@ -58,6 +58,7 @@ body {
   font-weight: 400;
   font-size: 100%;
   line-height: 24px;
+  color: #344563;
 }
 
 .headline_connect {
@@ -67,7 +68,7 @@ body {
   font-size: 200%;
   font-size: 16px;
   line-height: 24px;
-  color: cornflowerblue;
+  color: #7f8Cff;
 }
 
 .headline_connect:hover {
@@ -84,13 +85,12 @@ body {
   width: 200px;
   display: flex;
   justify-content: space-between;
-  color: darkslategray;
   padding-bottom: 325px;
   padding-left: 6%;
 }
 
 .social {
   font-size: 300%;
-  color: darkslategray;
+  color: #505f79;
   text-decoration: none;
 }
