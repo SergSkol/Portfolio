@@ -38,14 +38,9 @@ body {
   color: #6070ff;
 }
 
-.headline .about {
-  margin-left: 24px;
-  margin-right: 24px;
+.headline {
   display: flex;
   flex-direction: column;
-}
-
-.headline {
   background-image: url('./img/header-shapes-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,6 +209,8 @@ body {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   background: #e5e5e5;
   background-image: url('./img/about.png');
   background-repeat: no-repeat;
@@ -221,17 +218,19 @@ body {
 }
 
 .skils {
+  text-size-adjust: 200%;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
 }
 
-.langs {
+.lang {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #253858;
+  margin: 21px;
 }
 
 .contact-me-bottom {
