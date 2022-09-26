@@ -1,6 +1,6 @@
 # Portfolio
 
-> There is SergSkol Portfolio (Module 1 Day 3)
+> There is SergSkol's Portfolio
 
 ## Built With
 
@@ -8,13 +8,13 @@
 - Visual Studio Code
 - GIT and GITHUB
 
-## Live Demo (if available)
+## Live Demo
 
 https://sergskol.github.io/portfolio
 
 ## Getting Started
 
-Follow the link to open web page.
+Follow the link above to open web page
 
 ## Author
 
@@ -32,7 +32,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Appriciated to everyone who help and support me!
+Appriciated to everyone who helps and supports me!
 
 ## 📝 License
 
