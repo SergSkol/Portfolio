@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-  margin: 78px 24px 0px 24px;
+  margin: 78px 24px 1px 24px;
 }
 
 .headline {
@@ -46,7 +46,7 @@ body {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin: 58px 24px 0px 24px;
+  margin: 58px 24px 1px 24px;
 }
 
 .headline-top2 {
@@ -55,7 +55,7 @@ body {
   line-height: 52px;
   text-align: center;
   color: #36b37f;
-  margin: 0px 24px 0px 24px;
+  margin: 1px 24px 1px 24px;
 }
 
 .headline-text {
