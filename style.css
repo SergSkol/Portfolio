@@ -164,3 +164,104 @@ body {
   color: #fff;
   margin-bottom: 24px;
 }
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-image: url('./img/about-me.png');
+  background-repeat: no-repeat;
+}
+
+.about-me-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.about-me-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 12px 12px 12px 12px;
+}
+
+.resume-button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  width: 159px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  border: 3px solid #36b37f;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.about-container {
+  display: grid;
+}
+
+.about-item {
+  height: 352px;
+  margin: 12px 12px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.about-icon {
+  width: 100px;
+  margin: 28px 8px 8px 108px;
+}
+
+.about-header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.about-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 1%;
+}
+
+.about-tag {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  background: #fff;
+  border-radius: 4px;
+  margin: 6px 6px 6px 6px;
+  padding: 8px 8px 6px 6px;
+}
+
+.form {
+  margin: 6px 6px 24px 24px;
+}
+
+.form-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
