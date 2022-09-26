@@ -165,6 +165,18 @@ body {
   margin-bottom: 24px;
 }
 
+.work-card-button:active {
+  border: 3px solid #28352f;
+}
+
+.work-card-button:hover {
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.work-card-button:pressed {
+  background: #008552;
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -204,6 +216,18 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
+}
+
+.resume-button:active {
+  border: 3px solid #28352f;
+}
+
+.resume-button:hover {
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.resume-button:pressed {
+  background: #008552;
 }
 
 .about-container {
