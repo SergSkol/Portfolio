@@ -170,10 +170,10 @@ body {
 }
 
 .work-card-button:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-.work-card-button:pressed {
+.work-card-button:focus {
   background: #008552;
 }
 
@@ -223,10 +223,10 @@ body {
 }
 
 .resume-button:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-.resume-button:pressed {
+.resume-button:focus {
   background: #008552;
 }
 
