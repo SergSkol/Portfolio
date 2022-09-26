@@ -1,0 +1,89 @@
+body {
+  font-family: "Inter", "FontAwesome", serif;
+  font-style: normal;
+  position: absolute;
+}
+
+.toolbar {
+  position: fixed;
+  width: 327px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #28352f;
+}
+
+.logo {
+  text-decoration: none;
+  margin: 24px 24px 24px 24px;
+}
+
+.menu-icon {
+  text-decoration: none;
+}
+
+.header {
+  margin: 78px 24px 0px 24px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./img/header-illsutration-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headline-top1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 58px 24px 0px 24px;
+}
+
+.headline-top2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #36b37f;
+  margin: 0px 24px 0px 24px;
+}
+
+.headline-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  margin: 44px 24px 24px 24px;
+}
+
+.nobull {
+  list-style-type: none;
+}
+
+.links {
+  width: 105px;
+  display: flex;
+  justify-content: space-between;
+  color: #172b4d;
+  margin: 24px 24px 24px 83px;
+}
+
+.social {
+  font-size: 24px;
+  color: #505f79;
+  text-decoration: none;
+}
+
+.button-normal {
+  text-align: center;
+  margin: 24px 24px 24px 24px;
+}
