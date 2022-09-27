@@ -289,3 +289,57 @@ body {
   text-align: center;
   color: #172b4d;
 }
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+}
+
+.input-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+}
+
+.input-container {
+  box-sizing: border-box;
+  background: #fff; 
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 327px;
+}
+
+.input-name {
+  margin: 15px 15px 16px 16px;
+  width: 285px;
+  border: none;
+}
+
+.input-email {
+  margin: 15px 15px 16px 16px;
+  width: 285px;
+  border: none;
+}
+
+.input-msg {
+  margin: 12px 12px 12px 12px;
+  width: 293px;
+  border: none;
+}
+
+.email {
+  width: 375px;
+  height: 189px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
