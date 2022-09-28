@@ -6,7 +6,8 @@ body {
 
 .toolbar {
   position: fixed;
-  width: 95%;
+  width: 90%;
+  height: 120px;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -95,6 +96,7 @@ body {
 }
 
 .my-recent-works {
+  width: 80%;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -192,6 +194,8 @@ body {
   justify-content: center;
   background-image: url('./img/about-me.png');
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .about-me-title {
@@ -203,6 +207,7 @@ body {
 }
 
 .about-me-text {
+  width: 70%;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -288,11 +293,14 @@ body {
   padding: 8px 8px 6px 6px;
 }
 
-.form {
-  margin: 6px 6px 24px 24px;
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 42px 24px 24px;
 }
 
-.form-text {
+.contact-me-text {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -301,9 +309,6 @@ body {
 }
 
 .contact-me-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 24px;
   width: 327px;
   height: 330px;
@@ -316,6 +321,7 @@ body {
   gap: 24px;
   width: 327px;
   height: 330px;
+  padding: 1px 1px 1px 1px;
 }
 
 .input-container {
