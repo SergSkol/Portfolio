@@ -275,7 +275,6 @@ body {
 
 .about-tags {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   padding-left: 1%;
