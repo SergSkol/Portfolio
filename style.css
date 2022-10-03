@@ -134,11 +134,11 @@ body {
 }
 
 .work-card-tags {
-  display: flex;
   padding: 4px 4px 4px 4px;
 }
 
 .work-card-tag {
+  float: left;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -151,6 +151,7 @@ body {
 }
 
 .work-card-button {
+  margin-top: 19px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -259,14 +260,13 @@ body {
 }
 
 .about-tags {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 1%;
+  display: inline;
+  float: left;
+  padding-left: 11%;
 }
 
 .about-tag {
+  float: left;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
