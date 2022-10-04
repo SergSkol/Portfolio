@@ -1,12 +1,19 @@
 body {
-  font-family: "Inter", "FontAwesome", serif;
+  font-family: Inter, FontAwesome, serif;
   font-style: normal;
-  position: absolute;
+}
+
+.body-background {
+  background-image: url("img/contact-me.png");
+  background-position: 100% 96%;
+  background-repeat: no-repeat;
 }
 
 .toolbar {
-  position: fixed;
-  width: 327px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -15,27 +22,25 @@ body {
   align-items: center;
   text-align: center;
   color: #28352f;
+  padding: 10px 0;
 }
 
 .logo {
   text-decoration: none;
   color: #28352f;
-  margin: 24px 24px 24px 24px;
+  margin: 0 0 0 24px;
 }
 
 .menu-icon {
   text-decoration: none;
   color: #28352f;
-}
-
-.header {
-  margin: 78px 24px 1px 24px;
+  margin: 0 24px 0 0;
 }
 
 .headline {
   display: flex;
   flex-direction: column;
-  background-image: url('./img/header-illsutration-mobile.png');
+  background-image: url("./img/header-illsutration-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -46,7 +51,7 @@ body {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin: 58px 24px 1px 24px;
+  margin: 58px 24px 1px;
 }
 
 .headline-top2 {
@@ -55,7 +60,7 @@ body {
   line-height: 52px;
   text-align: center;
   color: #36b37f;
-  margin: 1px 24px 1px 24px;
+  margin: 1px 24px;
 }
 
 .headline-text {
@@ -64,7 +69,7 @@ body {
   line-height: 28px;
   text-align: center;
   color: #172b4d;
-  margin: 44px 24px 24px 24px;
+  margin: 44px 24px 24px;
 }
 
 .nobull {
@@ -72,36 +77,40 @@ body {
 }
 
 .links {
-  width: 105px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #172b4d;
-  margin: 24px 24px 24px 83px;
+  padding: 1px;
 }
 
 .social {
   font-size: 24px;
   color: #505f79;
   text-decoration: none;
+  margin: 24px;
+  padding: 1px;
 }
 
 .button-normal {
   text-align: center;
-  margin: 24px 12px 24px 24px;
 }
 
 .my-recent-works {
+  width: 80%;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin: 12px 24px 24px 24px;
+  margin: 24px;
 }
 
 .indicator {
   text-align: center;
-  margin: 24px 12px 24px 24px;
+  margin: 24px;
 }
 
 .work-container {
@@ -109,7 +118,8 @@ body {
 }
 
 .work-item {
-  margin: 12px 12px 24px 24px;
+  width: 327px;
+  margin: 24px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -130,12 +140,14 @@ body {
   line-height: 32px;
   text-align: center;
   color: #3a4a42;
-  margin: 12px 12px 12px 12px;
+  margin: 12px;
 }
 
 .work-card-tags {
   display: flex;
-  padding: 4px 4px 4px 4px;
+  text-align: center;
+  justify-content: center;
+  padding: 4px;
 }
 
 .work-card-tag {
@@ -146,7 +158,7 @@ body {
   color: #3a4a42;
   background: #ebf0ee;
   border-radius: 4px;
-  margin: 6px 6px 6px 6px;
+  margin: 6px;
   padding: 8px 8px 6px 6px;
 }
 
@@ -170,7 +182,7 @@ body {
 }
 
 .work-card-button:hover {
-  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 1px 8px 16px rgb(54 179 127 / 24%);
 }
 
 .work-card-button:focus {
@@ -182,8 +194,11 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-image: url('./img/about-me.png');
+  justify-content: center;
+  background-image: url("./img/about-me.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .about-me-title {
@@ -195,12 +210,13 @@ body {
 }
 
 .about-me-text {
+  width: 70%;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  margin: 12px 12px 12px 12px;
+  margin: 12px;
 }
 
 .resume-button {
@@ -223,7 +239,7 @@ body {
 }
 
 .resume-button:hover {
-  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 1px 8px 16px rgb(54 179 127 / 24%);
 }
 
 .resume-button:focus {
@@ -235,10 +251,12 @@ body {
 }
 
 .about-item {
+  width: 327px;
   height: 352px;
   margin: 12px 12px 24px 24px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
@@ -246,8 +264,8 @@ body {
 }
 
 .about-icon {
-  width: 100px;
-  margin: 28px 8px 8px 108px;
+  height: 90px;
+  margin: 40px 12px 10px;
 }
 
 .about-header {
@@ -260,7 +278,7 @@ body {
 
 .about-tags {
   display: flex;
-  align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: center;
   padding-left: 1%;
@@ -274,18 +292,81 @@ body {
   color: #36b37e;
   background: #fff;
   border-radius: 4px;
-  margin: 6px 6px 6px 6px;
+  margin: 6px;
   padding: 8px 8px 6px 6px;
 }
 
-.form {
-  margin: 6px 6px 24px 24px;
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 42px 24px 24px;
 }
 
-.form-text {
+.contact-me-text {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+}
+
+.contact-me-form {
+  gap: 24px;
+  width: 327px;
+}
+
+.input-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+  padding: 1px;
+}
+
+.input-container {
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 327px;
+}
+
+.input-container > input:focus {
+  outline: none;
+}
+
+.input-msg {
+  margin: 12px;
+  width: 293px;
+  border: none;
+  height: 80px;
+}
+
+.input-msg:focus {
+  outline: none;
+}
+
+.input-name {
+  margin: 15px 15px 16px 16px;
+  width: 285px;
+  border: none;
+}
+
+.input-email {
+  margin: 15px 15px 16px 16px;
+  width: 285px;
+  border: none;
+}
+
+.email {
+  width: 100%;
+  height: 189px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }
