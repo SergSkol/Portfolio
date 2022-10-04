@@ -1,36 +1,40 @@
 body {
   font-family: "Inter", "FontAwesome", serif;
   font-style: normal;
-  position: absolute;
+}
+
+.body-background {
+  background-image: url("img/contact-me.png");
+  background-position: 100% 96%;
+  background-repeat: no-repeat;
 }
 
 .toolbar {
-  position: fixed;
-  width: 90%;
-  height: 120px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
   color: #28352f;
+  padding: 10px 0;
 }
 
 .logo {
   text-decoration: none;
   color: #28352f;
-  margin: 48px 24px 24px 24px;
+  margin: 0 0 0 24px;
 }
 
 .menu-icon {
   text-decoration: none;
   color: #28352f;
-  margin: 48px 24px 24px 24px;
-}
-
-.header {
-  margin: 78px 24px 1px 24px;
+  margin: 0 24px 0 0;
 }
 
 .headline {
@@ -310,7 +314,6 @@ body {
 .contact-me-form {
   gap: 24px;
   width: 327px;
-  height: 330px;
 }
 
 .input-list {
@@ -331,6 +334,14 @@ body {
   width: 327px;
 }
 
+.input-container > input:focus {
+  outline: none;
+}
+
+.input-msg:focus {
+  outline: none;
+}
+
 .input-name {
   margin: 15px 15px 16px 16px;
   width: 285px;
@@ -347,6 +358,7 @@ body {
   margin: 12px 12px 12px 12px;
   width: 293px;
   border: none;
+  height: 80px;
 }
 
 .email {
