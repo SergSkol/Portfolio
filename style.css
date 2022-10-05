@@ -374,8 +374,10 @@ body {
 
 /* Desktop version */
 @media screen and (min-width: 768px) {
-  .toolbar, .logo, .menu-icon {
-    display:none;
+  .toolbar,
+  .logo,
+  .menu-icon {
+    display: none;
   }
 
   .top-menu {
@@ -392,7 +394,9 @@ body {
     line-height: 28px;
   }
 
-  .menu-portfolio, .menu-about, .menu-contact {
+  .menu-portfolio,
+  .menu-about,
+  .menu-contact {
     text-decoration: none;
     color: #28352f;
     margin: 0 0 0 24px;
@@ -403,11 +407,17 @@ body {
   }
 
   .headline-text {
-    margin: 0px 20% 0px 20%;
+    margin: 0 20%;
   }
 
   .work-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-me {
+    background-image: url("./img/illustration about me desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .about-container {
@@ -415,7 +425,7 @@ body {
   }
 
   .about-me-text {
-    margin: 0px 20% 0px 20%;
+    margin: 0 20%;
   }
 
   .contact-me {
@@ -424,5 +434,4 @@ body {
     align-items: center;
     margin: 24px 42px 24px 24px;
   }
-  
 }
