@@ -431,7 +431,7 @@ body {
   .contact-me {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     margin: 24px 42px 124px 24px;
   }
 
@@ -441,7 +441,7 @@ body {
   }
 
   .input-list {
-    align-items:flex-start;
+    align-items: flex-start;
   }
 
   .contact-me-form,
