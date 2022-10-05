@@ -121,7 +121,7 @@ body {
 }
 
 .work-item {
-  width: 327px;
+  width: 87%;
   margin: 24px;
   display: flex;
   flex-direction: column;
@@ -253,7 +253,7 @@ body {
 }
 
 .about-item {
-  width: 327px;
+  width: 87%;
   height: 352px;
   margin: 12px 12px 24px 24px;
   display: flex;
@@ -431,7 +431,29 @@ body {
   .contact-me {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 24px 42px 24px 24px;
+    align-items:center;
+    margin: 24px 42px 124px 24px;
+  }
+
+  .contact-me-text {
+    width: 50%;
+    margin: 0 24px 0 135px;
+  }
+
+  .input-list {
+    align-items:flex-start;
+  }
+
+  .contact-me-form,
+  .input-list,
+  .input-container,
+  .input-msg,
+  .input-name,
+  .input-email {
+    width: 90%;
+  }
+
+  .email {
+    display: none;
   }
 }
