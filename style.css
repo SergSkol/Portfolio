@@ -433,7 +433,7 @@ body {
   .about-me {
     background-image: url("./img/illustration about me desktop.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .about-container {
