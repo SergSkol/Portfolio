@@ -96,6 +96,11 @@ body {
   text-decoration: none;
   margin: 24px;
   padding: 1px;
+  transition: font-size 1s;
+}
+
+.social:hover {
+  font-size: 50px;
 }
 
 .button-normal {
@@ -129,6 +134,11 @@ body {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  transition: all 0.5s ease-out;
+}
+
+.work-item:hover {
+  background-color: #fff;
 }
 
 .work-card {
@@ -178,6 +188,7 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
+  transition: all 0.5s ease-out;
 }
 
 .work-card-button:active {
@@ -190,6 +201,7 @@ body {
 
 .work-card-button:focus {
   background: #008552;
+  border: 3px solid #008552;
 }
 
 .about-me {
@@ -234,6 +246,7 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
+  transition: all 0.5s ease-out;
 }
 
 .resume-button:active {
@@ -246,6 +259,7 @@ body {
 
 .resume-button:focus {
   background: #008552;
+  border: 3px solid #008552;
 }
 
 .about-container {
@@ -400,6 +414,13 @@ body {
     text-decoration: none;
     color: #28352f;
     margin: 0 0 0 24px;
+    transition: all 0.3s ease-out;
+  }
+
+  .menu-portfolio:hover,
+  .menu-about:hover,
+  .menu-contact:hover {
+    font-size: 20px;
   }
 
   .headline {
@@ -417,7 +438,7 @@ body {
   .about-me {
     background-image: url("./img/illustration about me desktop.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .about-container {
@@ -434,7 +455,6 @@ body {
     align-items: center;
     margin: 24px 42px 24px 24px;
     padding: 0 0 300px 0;
-    border-bottom: 1px solid #dfe1e6;
   }
 
   .contact-me-text {
@@ -463,5 +483,9 @@ body {
     background-image: url("img/contact-me-desktop.png");
     background-position: 100% 96%;
     background-repeat: no-repeat;
+  }
+
+  .footer-cont {
+    border-top: 1px solid #dfe1e6;
   }
 }
