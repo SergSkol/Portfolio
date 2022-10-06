@@ -129,6 +129,11 @@ body {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  transition: all 0.5s ease-out;
+}
+
+.work-item:hover {
+  background-color: #fff;
 }
 
 .work-card {
@@ -178,6 +183,7 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
+  transition: all 0.5s ease-out;
 }
 
 .work-card-button:active {
@@ -190,6 +196,7 @@ body {
 
 .work-card-button:focus {
   background: #008552;
+  border: 3px solid #008552;
 }
 
 .about-me {
@@ -234,6 +241,7 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
+  transition: all 0.5s ease-out;
 }
 
 .resume-button:active {
@@ -246,6 +254,7 @@ body {
 
 .resume-button:focus {
   background: #008552;
+  border: 3px solid #008552;
 }
 
 .about-container {
@@ -400,6 +409,13 @@ body {
     text-decoration: none;
     color: #28352f;
     margin: 0 0 0 24px;
+    transition: all 0.3s ease-out;
+  }
+
+  .menu-portfolio:hover,
+  .menu-about:hover,
+  .menu-contact:hover {
+    font-size: 20px;
   }
 
   .headline {
