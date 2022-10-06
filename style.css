@@ -96,6 +96,11 @@ body {
   text-decoration: none;
   margin: 24px;
   padding: 1px;
+  transition: font-size 1s;
+}
+
+.social:hover {
+  font-size: 50px;
 }
 
 .button-normal {
@@ -450,7 +455,6 @@ body {
     align-items: center;
     margin: 24px 42px 24px 24px;
     padding: 0 0 300px 0;
-    border-bottom: 1px solid #dfe1e6;
   }
 
   .contact-me-text {
@@ -479,5 +483,9 @@ body {
     background-image: url("img/contact-me-desktop.png");
     background-position: 100% 96%;
     background-repeat: no-repeat;
+  }
+
+  .footer-cont {
+    border-top: 1px solid #dfe1e6;
   }
 }
