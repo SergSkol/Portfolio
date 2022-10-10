@@ -11,7 +11,7 @@
 ## Live Demo
 
 There is the link to the online version
-https://sergskol.github.io/portfolio
+https://sergskol.github.io/Portfolio
 
 ## Getting Started
 
