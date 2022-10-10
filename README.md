@@ -10,11 +10,12 @@
 
 ## Live Demo
 
+There is the link to the online version
 https://sergskol.github.io/portfolio
 
 ## Getting Started
 
-Follow the link above to open web page
+Follow the link above to open online version
 
 ## Author
 
