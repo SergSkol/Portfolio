@@ -64,7 +64,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #36b37f;
+  color: #008552;
   margin: 1px 24px;
 }
 
@@ -92,7 +92,7 @@ body {
 
 .social {
   font-size: 24px;
-  color: #505f79;
+  color: #172b4d;
   text-decoration: none;
   margin: 24px;
   padding: 1px;
@@ -152,7 +152,7 @@ body {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #3a4a42;
+  color: #172b4d;
   margin: 12px;
 }
 
@@ -168,7 +168,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #3a4a42;
+  color: #172b4d;
   background: #ebf0ee;
   border-radius: 4px;
   margin: 6px;
@@ -181,9 +181,9 @@ body {
   line-height: 24px;
   width: 122px;
   height: 48px;
-  background: #36b37f;
+  background: #008552;
+  border: 3px solid #008552;
   border-radius: 4px;
-  border: 3px solid #36b37f;
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
@@ -196,12 +196,12 @@ body {
 }
 
 .work-card-button:hover {
-  box-shadow: 1px 8px 16px rgb(54 179 127 / 24%);
+  box-shadow: 1px 8px 16px rgb(54 179 127 / 48%);
 }
 
 .work-card-button:focus {
-  background: #008552;
-  border: 3px solid #008552;
+  background: #172b4d;
+  border: 3px solid #172b4d;
 }
 
 .about-me {
@@ -239,9 +239,9 @@ body {
   line-height: 24px;
   width: 159px;
   height: 48px;
-  background: #36b37f;
+  background: #008552;
   border-radius: 4px;
-  border: 3px solid #36b37f;
+  border: 3px solid #008552;
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
@@ -254,12 +254,12 @@ body {
 }
 
 .resume-button:hover {
-  box-shadow: 1px 8px 16px rgb(54 179 127 / 24%);
+  box-shadow: 1px 8px 16px rgb(54 179 127 / 48%);
 }
 
 .resume-button:focus {
-  background: #008552;
-  border: 3px solid #008552;
+  background: #172b4d;
+  border: 3px solid #172b4d;
 }
 
 .about-container {
@@ -305,7 +305,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: #008552;
   background: #fff;
   border-radius: 4px;
   margin: 6px;
@@ -374,6 +374,12 @@ body {
   margin: 15px 15px 16px 16px;
   width: 285px;
   border: none;
+}
+
+.input-name-lbl,
+.input-email-lbl,
+.input-msg-lbl {
+  display: none;
 }
 
 .email {
