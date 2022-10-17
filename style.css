@@ -53,7 +53,7 @@ body {
   overflow: hidden;
   background: #fff;
   mix-blend-mode: normal;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 20px;
 }
 
@@ -77,7 +77,7 @@ body {
 .menuItem a {
   display: inline-block;
   text-decoration: none;
-  color: #3A4A42;
+  color: #3a4a42;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
