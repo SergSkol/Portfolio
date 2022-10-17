@@ -1,14 +1,18 @@
 let menuIcon = document.querySelector('#menuIcon');
+let closeIcon = document.querySelector('#closeIcon');
 let menuBox = document.querySelector('#menuBox');
-let menuItem = document.querySelector('.menuItem');
-
-menuItem.forEach((item) => {
-  item.addEventListener('click', () => {
-    menuBox.style.display = 'none';
-  });
-});
+let menuItems = document.querySelectorAll('.menuItem');
 
 menuIcon.addEventListener('click',function (event) {
   menuBox.classList.toggle("open-menu");
-  event.preventDefault();
 });
+
+closeIcon.addEventListener('click',function (event) {
+  menuBox.classList.toggle("open-menu");
+});
+
+for (let item of menuItems) {
+  item.addEventListener('click', function (event) {
+    menuBox.classList.toggle("open-menu");
+  });
+}
