@@ -4,7 +4,7 @@
 
 ## Built With
 
-- HTML, CSS
+- HTML, CSS and JavaScript
 - Visual Studio Code
 - GIT and GITHUB
 
