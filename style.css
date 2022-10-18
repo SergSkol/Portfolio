@@ -63,10 +63,12 @@ body {
 }
 
 .close-icon {
-  margin: 12px 32px 0 0;
   text-align: end;
   font-size: 20px;
   color: #28352f;
+  position: absolute;
+  top: 30px;
+  right: 32px;
 }
 
 .menuItem {
@@ -168,7 +170,6 @@ body {
 }
 
 .work-item {
-  width: 87%;
   margin: 24px;
   display: flex;
   flex-direction: column;
@@ -185,8 +186,12 @@ body {
 
 .work-card {
   background: #fff;
-  margin-top: 252px;
   border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.work-card-display {
+  display: flex;
 }
 
 .work-card-title {
@@ -198,10 +203,36 @@ body {
   margin: 12px;
 }
 
+.work-card-title-display {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  color: #172b4d;
+  margin: 12px 12px 12px 30px;
+}
+
+.work-card-image {
+  width: 92%;
+  margin: 4%;
+}
+
 .work-card-tags {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 4px;
+}
+
+.work-card-tags-display {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: left;
   padding: 4px;
 }
 
@@ -215,6 +246,10 @@ body {
   border-radius: 4px;
   margin: 6px;
   padding: 8px 8px 6px 6px;
+}
+
+.work-card-descr {
+  margin: 0 30px 30px 30px;
 }
 
 .work-card-button {
@@ -244,6 +279,61 @@ body {
 .work-card-button:focus {
   background: #172b4d;
   border: 3px solid #172b4d;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background: #c1c7d0;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-work-card-button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  width: 152px;
+  height: 48px;
+  background: #008552;
+  border: 3px solid #008552;
+  border-radius: 4px;
+  text-align: start;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin: 24px 6px 24px 6px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.modal-work-card-button-display {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  width: 152px;
+  height: 24px;
+  background: #008552;
+  border: 3px solid #008552;
+  border-radius: 4px;
+  text-align: start;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin: 24px 30px 24px 6px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.modal-work-card-button-img {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  right: -10px;
 }
 
 .about-me {
