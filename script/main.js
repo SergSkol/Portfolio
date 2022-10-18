@@ -11,42 +11,48 @@ const works = [
     featuredImage: './img/Snapshoot Portfolio 1.png',
     technologies: ['Codekid', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     linkToLiveVersion: 'http://example.com',
-    linkToSource: 'http://github.com'},
+    linkToSource: 'http://github.com',
+  },
   {
     name: 'Keeping track of hundreds of components',
     description: 'Lorem 2 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './img/Snapshoot Portfolio 2.png',
     technologies: ['Codekid', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     linkToLiveVersion: 'http://example.com',
-    linkToSource: 'http://github.com'},
+    linkToSource: 'http://github.com',
+  },
   {
     name: 'Keeping track of hundreds of components',
     description: 'Lorem 3 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './img/Snapshoot Portfolio 3.png',
     technologies: ['Codekid', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     linkToLiveVersion: 'http://example.com',
-    linkToSource: 'http://github.com'},
+    linkToSource: 'http://github.com',
+  },
   {
     name: 'Keeping track of hundreds of components',
     description: 'Lorem 4 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './img/Snapshoot Portfolio 4.png',
     technologies: ['Codekid', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     linkToLiveVersion: 'http://example.com',
-    linkToSource: 'http://github.com'},
+    linkToSource: 'http://github.com',
+  },
   {
     name: 'Keeping track of hundreds of components',
     description: 'Lorem 5 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './img/Snapshoot Portfolio 5.png',
     technologies: ['Codekid', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     linkToLiveVersion: 'http://example.com',
-    linkToSource: 'http://github.com'},
+    linkToSource: 'http://github.com',
+  },
   {
     name: 'Keeping track of hundreds of components',
     description: 'Lorem 6 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featuredImage: './img/Snapshoot Portfolio 6.png',
     technologies: ['Codekid', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     linkToLiveVersion: 'http://example.com',
-    linkToSource: 'http://github.com'}
+    linkToSource: 'http://github.com',
+  },
 ];
 
 menuIcon.addEventListener('click', () => {
@@ -94,7 +100,7 @@ window.onload = function buildWorks() {
     const workCardButton = addElement('button', workCard, 'work-card-button');
     workCardButton.innerHTML = 'See Project';
 
-    //open modal window
+    // open modal window
 
     workCardButton.addEventListener('click', () => {
       const isDisplayOrMobile = isHidden('.logo');
@@ -105,14 +111,14 @@ window.onload = function buildWorks() {
       modalWorkContainer.classList.remove('hide');
       const modalWorkItem = addElement('div', modalWorkContainer, 'work-item');
       const modalWorkCard = addElement('div', modalWorkItem, 'work-card');
-     
+
       const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image');
       modalFeaturedImage.src = work.featuredImage;
 
       const modalCloseIcon = addElement('a', modalWorkCard, 'close-icon');
       modalCloseIcon.classList.add('fa');
       modalCloseIcon.classList.add('fa-times');
-     
+
       if (isDisplayOrMobile) {
         const modalWorkCardDisplay = addElement('div', modalWorkCard, 'work-card-display');
         const modalWorkCardTitle = addElement('h3', modalWorkCardDisplay, 'work-card-title-display');
@@ -121,7 +127,7 @@ window.onload = function buildWorks() {
         const modalWorkCardButton1 = addElement('a', modalWorkCardDisplay, 'modal-work-card-button-display');
         modalWorkCardButton1.innerHTML = 'See Live';
         modalWorkCardButton1.href = work.linkToLiveVersion;
-        
+
         const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
         modalWorkCardButtonImg1.src = './img/see live icon.png';
 
@@ -131,7 +137,6 @@ window.onload = function buildWorks() {
 
         const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
         modalWorkCardButtonImg2.src = './img/see source icon.png';
-
       } else {
         const modalWorkCardTitle = addElement('h3', modalWorkCard, 'work-card-title');
         modalWorkCardTitle.innerHTML = work.name;
@@ -139,9 +144,9 @@ window.onload = function buildWorks() {
 
       const modalWorkCardTags = addElement('ul', modalWorkCard, 'work-card-tags');
       modalWorkCardTags.classList.add('nobull');
-      
+
       workTechnologies.forEach((technology) => {
-        let modalWorkCardTag = addElement('li', modalWorkCardTags, 'work-card-tag');
+        const modalWorkCardTag = addElement('li', modalWorkCardTags, 'work-card-tag');
         modalWorkCardTag.innerHTML = technology;
       });
 
@@ -155,7 +160,7 @@ window.onload = function buildWorks() {
 
         const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
         modalWorkCardButtonImg1.src = './img/see live icon.png';
-      
+
         const modalWorkCardButton2 = addElement('a', modalWorkCard, 'modal-work-card-button');
         modalWorkCardButton2.innerHTML = 'See Source';
         modalWorkCardButton2.href = work.linkToSource;
@@ -163,8 +168,8 @@ window.onload = function buildWorks() {
         const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
         modalWorkCardButtonImg2.src = './img/see source icon.png';
       }
- 
-      modal_closeIcon.addEventListener('click', () => {
+
+      modalCloseIcon.addEventListener('click', () => {
         modalWorkContainer.classList.add('hide');
         modalWorkContainer.removeChild(modalWorkContainer.firstElementChild);
       });
