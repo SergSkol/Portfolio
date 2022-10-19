@@ -6,7 +6,7 @@ body {
 }
 
 .body-background {
-  background-image: url("img/contact-me.png");
+  background-image: url('img/contact-me.png');
   background-position: 100% 96%;
   background-repeat: no-repeat;
 }
@@ -89,7 +89,7 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  background-image: url("./img/header-illsutration-mobile.png");
+  background-image: url('./img/header-illsutration-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -188,6 +188,7 @@ body {
   background: #fff;
   border-radius: 8px;
   padding-bottom: 20px;
+  transition: all 0.5s ease-in-out;
 }
 
 .work-card-display {
@@ -289,6 +290,11 @@ body {
   height: 100%;
   overflow: scroll;
   background: #c1c7d0;
+  transition: all 0.5s ease-out;
+}
+
+.work-card:hover {
+  transform: scale(1.03);
 }
 
 .hide {
@@ -342,7 +348,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url("./img/about-me.png");
+  background-image: url('./img/about-me.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -562,7 +568,7 @@ body {
   }
 
   .headline {
-    background-image: url("./img/Header-llustration-desktop.png");
+    background-image: url('./img/Header-llustration-desktop.png');
   }
 
   .headline-text {
@@ -574,7 +580,7 @@ body {
   }
 
   .about-me {
-    background-image: url("./img/illustration about me desktop.png");
+    background-image: url('./img/illustration about me desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -618,7 +624,7 @@ body {
   }
 
   .body-background {
-    background-image: url("img/contact-me-desktop.png");
+    background-image: url('img/contact-me-desktop.png');
     background-position: 100% 96%;
     background-repeat: no-repeat;
   }
