@@ -112,16 +112,15 @@ window.onload = function buildWorks() {
       const modalWorkItem = addElement('div', modalWorkContainer, 'modal-work-item');
       const modalWorkCard = addElement('div', modalWorkItem, 'work-card');
 
-      let modalCloseIcon = undefined;
+      let modalCloseIcon = null;
 
       if (isDesktopOrMobile) {
-        
         const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image-desktop');
         modalFeaturedImage.src = work.featuredImage;
 
         modalCloseIcon = addElement('img', modalWorkCard, 'modal-close-icon-desktop');
         modalCloseIcon.src = './img/Disabled.png';
-        
+
         const modalWorkCardDesktop = addElement('div', modalWorkCard, 'work-card-desktop');
         const modalWorkCardTitle = addElement('h3', modalWorkCardDesktop, 'work-card-title-desktop');
         modalWorkCardTitle.innerHTML = work.name;
@@ -139,9 +138,7 @@ window.onload = function buildWorks() {
 
         const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
         modalWorkCardButtonImg2.src = './img/see source icon.png';
-
       } else {
-
         const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image');
         modalFeaturedImage.src = work.featuredImage;
 
