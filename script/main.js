@@ -103,41 +103,52 @@ window.onload = function buildWorks() {
     // open modal window
 
     workCardButton.addEventListener('click', () => {
-      const isDisplayOrMobile = isHidden('.logo');
+      const isDesktopOrMobile = isHidden('.logo');
 
       const modalWorkContainer = document.querySelector('.modal-work-container');
 
       modalWorkContainer.classList.add('modal');
       modalWorkContainer.classList.remove('hide');
-      const modalWorkItem = addElement('div', modalWorkContainer, 'work-item');
+      const modalWorkItem = addElement('div', modalWorkContainer, 'modal-work-item');
       const modalWorkCard = addElement('div', modalWorkItem, 'work-card');
 
-      const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image');
-      modalFeaturedImage.src = work.featuredImage;
+      let modalCloseIcon = undefined;
 
-      const modalCloseIcon = addElement('a', modalWorkCard, 'close-icon');
-      modalCloseIcon.classList.add('fa');
-      modalCloseIcon.classList.add('fa-times');
+      if (isDesktopOrMobile) {
+        
+        const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image-desktop');
+        modalFeaturedImage.src = work.featuredImage;
 
-      if (isDisplayOrMobile) {
-        const modalWorkCardDisplay = addElement('div', modalWorkCard, 'work-card-display');
-        const modalWorkCardTitle = addElement('h3', modalWorkCardDisplay, 'work-card-title-display');
+        modalCloseIcon = addElement('img', modalWorkCard, 'modal-close-icon-desktop');
+        modalCloseIcon.src = './img/Disabled.png';
+        
+        const modalWorkCardDesktop = addElement('div', modalWorkCard, 'work-card-desktop');
+        const modalWorkCardTitle = addElement('h3', modalWorkCardDesktop, 'work-card-title-desktop');
         modalWorkCardTitle.innerHTML = work.name;
 
-        const modalWorkCardButton1 = addElement('a', modalWorkCardDisplay, 'modal-work-card-button-display');
+        const modalWorkCardButton1 = addElement('a', modalWorkCardDesktop, 'modal-work-card-button-desktop');
         modalWorkCardButton1.innerHTML = 'See Live';
         modalWorkCardButton1.href = work.linkToLiveVersion;
 
         const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
         modalWorkCardButtonImg1.src = './img/see live icon.png';
 
-        const modalWorkCardButton2 = addElement('a', modalWorkCardDisplay, 'modal-work-card-button-display');
+        const modalWorkCardButton2 = addElement('a', modalWorkCardDesktop, 'modal-work-card-button-desktop');
         modalWorkCardButton2.innerHTML = 'See Source';
         modalWorkCardButton2.href = work.linkToSource;
 
         const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
         modalWorkCardButtonImg2.src = './img/see source icon.png';
+
       } else {
+
+        const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image');
+        modalFeaturedImage.src = work.featuredImage;
+
+        modalCloseIcon = addElement('a', modalWorkCard, 'modal-close-icon');
+        modalCloseIcon.classList.add('fa');
+        modalCloseIcon.classList.add('fa-times');
+
         const modalWorkCardTitle = addElement('h3', modalWorkCard, 'work-card-title');
         modalWorkCardTitle.innerHTML = work.name;
       }
@@ -153,7 +164,7 @@ window.onload = function buildWorks() {
       const modalWorkCardDescr = addElement('p', modalWorkCard, 'work-card-descr');
       modalWorkCardDescr.innerHTML = work.description;
 
-      if (!isDisplayOrMobile) {
+      if (!isDesktopOrMobile) {
         const modalWorkCardButton1 = addElement('a', modalWorkCard, 'modal-work-card-button');
         modalWorkCardButton1.innerHTML = 'See Live';
         modalWorkCardButton1.href = work.linkToLiveVersion;

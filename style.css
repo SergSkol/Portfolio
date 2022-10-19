@@ -64,10 +64,10 @@ body {
 
 .close-icon {
   text-align: end;
-  font-size: 20px;
-  color: #28352f;
+  font-size: 32px;
+  color: #67798e;
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 32px;
 }
 
@@ -181,7 +181,7 @@ body {
 }
 
 .work-item:hover {
-  background-color: #fff;
+  transform: scale(1.03);
 }
 
 .work-card {
@@ -191,7 +191,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.work-card-display {
+.work-card-desktop {
   display: flex;
 }
 
@@ -204,7 +204,7 @@ body {
   margin: 12px;
 }
 
-.work-card-title-display {
+.work-card-title-desktop {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -213,7 +213,7 @@ body {
   line-height: 32px;
   text-align: left;
   color: #172b4d;
-  margin: 12px 12px 12px 30px;
+  margin: 12px 12px 12px 24px;
 }
 
 .work-card-image {
@@ -221,15 +221,22 @@ body {
   margin: 4%;
 }
 
+.work-card-image-desktop {
+  width: 96%;
+  margin-top: 78px;
+  border-radius: 8px;
+}
+
 .work-card-tags {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
+  margin: 0 24px 0 24px;
   padding: 4px;
 }
 
-.work-card-tags-display {
+.work-card-tags-desktop {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
@@ -250,7 +257,7 @@ body {
 }
 
 .work-card-descr {
-  margin: 0 30px 30px 30px;
+  margin: 0 24px 30px 24px;
 }
 
 .work-card-button {
@@ -293,12 +300,35 @@ body {
   transition: all 0.5s ease-out;
 }
 
-.work-card:hover {
-  transform: scale(1.03);
-}
-
 .hide {
   display: none;
+}
+
+.modal-work-item {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.modal-close-icon {
+  text-align: end;
+  font-size: 200%;
+  color: #fff;
+  position: absolute;
+  top: 10vw;
+  right: 10vw;
+}
+
+.modal-close-icon-desktop {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 44px;
+  right: 44px;
 }
 
 .modal-work-card-button {
@@ -318,7 +348,7 @@ body {
   padding: 10px;
 }
 
-.modal-work-card-button-display {
+.modal-work-card-button-desktop {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
