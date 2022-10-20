@@ -560,6 +560,14 @@ body {
   color: #42526e;
 }
 
+.contact-form-error {
+  font-size: 12px;
+  color: red;
+  position: relative;
+  top: -78px;
+  left: 170px;
+}
+
 /* Desktop version */
 @media screen and (min-width: 768px) {
   .toolbar,

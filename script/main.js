@@ -55,19 +55,7 @@ const works = [
   },
 ];
 
-menuIcon.addEventListener('click', () => {
-  menuBox.classList.toggle('open-menu');
-});
-
-closeIcon.addEventListener('click', () => {
-  menuBox.classList.toggle('open-menu');
-});
-
-menuItems.forEach((item) => {
-  item.addEventListener('click', () => {
-    menuBox.classList.toggle('open-menu');
-  });
-});
+// Dynamic details and popup window
 
 function addElement(elementType, parent, className) {
   const element = document.createElement(elementType);
@@ -184,3 +172,34 @@ window.onload = function buildWorks() {
     });
   });
 };
+
+// Popup menu
+
+menuIcon.addEventListener('click', () => {
+  menuBox.classList.toggle('open-menu');
+});
+
+closeIcon.addEventListener('click', () => {
+  menuBox.classList.toggle('open-menu');
+});
+
+menuItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    menuBox.classList.toggle('open-menu');
+  });
+});
+
+const contactForm = document.querySelector('.contact-me-form');
+const contactFormEmail = document.querySelector('#email');
+const contactFormError = document.querySelector('.contact-form-error');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const email = contactFormEmail.value;
+  if (email === email.toLowerCase()) {
+    contactForm.submit();
+    contactForm.reset();
+  } else {
+    contactFormError.innerHTML = 'ERROR: Email should be in <br>lower case. Form is not sent.';
+  }
+});
