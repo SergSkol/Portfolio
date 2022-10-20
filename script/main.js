@@ -1,9 +1,3 @@
-const menuIcon = document.querySelector('#menuIcon');
-const closeIcon = document.querySelector('#closeIcon');
-const menuBox = document.querySelector('#menuBox');
-const menuItems = document.querySelectorAll('.menuItem');
-const workContainer = document.querySelector('.work-container');
-
 const works = [
   {
     name: 'Keeping track of hundreds of components',
@@ -69,6 +63,8 @@ function isHidden(className) {
   const style = getComputedStyle(element);
   return (style.display === 'none');
 }
+
+const workContainer = document.querySelector('.work-container');
 
 window.onload = function buildWorks() {
   works.forEach((work) => {
@@ -175,6 +171,11 @@ window.onload = function buildWorks() {
 
 // Popup menu
 
+const menuIcon = document.querySelector('#menuIcon');
+const closeIcon = document.querySelector('#closeIcon');
+const menuBox = document.querySelector('#menuBox');
+const menuItems = document.querySelectorAll('.menuItem');
+
 menuIcon.addEventListener('click', () => {
   menuBox.classList.toggle('open-menu');
 });
@@ -188,6 +189,8 @@ menuItems.forEach((item) => {
     menuBox.classList.toggle('open-menu');
   });
 });
+
+// Validate contact form (email in lowerCase) 
 
 const contactForm = document.querySelector('.contact-me-form');
 const contactFormEmail = document.querySelector('#email');
@@ -203,3 +206,37 @@ contactForm.addEventListener('submit', (event) => {
     contactFormError.innerHTML = 'ERROR: Email should be in <br>lower case. Form is not sent.';
   }
 });
+
+// Preserve data in browser (localStorage) 
+
+const storageKey = 'PortfolioContactFormData1';
+const currentFormName = document.querySelector('#name');
+const currentFormEmail = document.querySelector('#email');
+const currentFormMsg = document.querySelector('#msg');
+const currentFormFields = document.querySelectorAll('.input-field');
+
+function loadDataFromLocalStorage() {
+  const dataLoaded = JSON.parse(localStorage.getItem(storageKey));
+  currentFormName.value = dataLoaded.name;
+  currentFormEmail.value = dataLoaded.email;
+  currentFormMsg.value = dataLoaded.msg;
+}
+
+function saveDataToLocalStorage() {
+  const dataSaved = {
+    name: currentFormName.value,
+    email: currentFormEmail.value,
+    msg: currentFormMsg.value,
+  };
+  localStorage.setItem(storageKey, JSON.stringify(dataSaved));
+}
+
+window.onload = () => {
+  loadDataFromLocalStorage();
+}
+
+currentFormFields.forEach((field) => {
+  field.addEventListener('change', () => {
+    saveDataToLocalStorage();
+  })
+})
