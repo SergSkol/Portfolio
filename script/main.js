@@ -190,7 +190,7 @@ menuItems.forEach((item) => {
   });
 });
 
-// Validate contact form (email in lowerCase) 
+// Validate contact form (email in lowerCase)
 
 const contactForm = document.querySelector('.contact-me-form');
 const contactFormEmail = document.querySelector('#email');
@@ -207,7 +207,7 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-// Preserve data in browser (localStorage) 
+// Preserve data in browser (localStorage)
 
 const storageKey = 'PortfolioContactFormData1';
 const currentFormName = document.querySelector('#name');
@@ -233,10 +233,10 @@ function saveDataToLocalStorage() {
 
 window.onload = () => {
   loadDataFromLocalStorage();
-}
+};
 
 currentFormFields.forEach((field) => {
   field.addEventListener('change', () => {
     saveDataToLocalStorage();
-  })
-})
+  });
+});
