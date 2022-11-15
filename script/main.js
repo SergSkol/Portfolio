@@ -66,108 +66,106 @@ function isHidden(className) {
 
 const workContainer = document.querySelector('.work-container');
 
-window.onload = function buildWorks() {
-  works.forEach((work) => {
-    const workItem = addElement('div', workContainer, 'work-item');
-    const workCard = addElement('div', workItem, 'work-card');
-    const featuredImage = addElement('img', workCard, 'work-card-image');
-    featuredImage.src = work.featuredImage;
-    const workCardTitle = addElement('h3', workCard, 'work-card-title');
-    workCardTitle.innerHTML = work.name;
-    const workCardTags = addElement('ul', workCard, 'work-card-tags');
-    workCardTags.classList.add('nobull');
-    const workTechnologies = work.technologies;
+works.forEach((work) => {
+  const workItem = addElement('div', workContainer, 'work-item');
+  const workCard = addElement('div', workItem, 'work-card');
+  const featuredImage = addElement('img', workCard, 'work-card-image');
+  featuredImage.src = work.featuredImage;
+  const workCardTitle = addElement('h3', workCard, 'work-card-title');
+  workCardTitle.innerHTML = work.name;
+  const workCardTags = addElement('ul', workCard, 'work-card-tags');
+  workCardTags.classList.add('nobull');
+  const workTechnologies = work.technologies;
+  workTechnologies.forEach((technology) => {
+    const workCardTag = addElement('li', workCardTags, 'work-card-tag');
+    workCardTag.innerHTML = technology;
+  });
+  const workCardButton = addElement('button', workCard, 'work-card-button');
+  workCardButton.innerHTML = 'See Project';
+
+  // open modal window
+
+  workCardButton.addEventListener('click', () => {
+    const isDesktopOrMobile = isHidden('.logo');
+
+    const modalWorkContainer = document.querySelector('.modal-work-container');
+
+    modalWorkContainer.classList.add('modal');
+    modalWorkContainer.classList.remove('hide');
+    const modalWorkItem = addElement('div', modalWorkContainer, 'modal-work-item');
+    const modalWorkCard = addElement('div', modalWorkItem, 'work-card');
+
+    let modalCloseIcon = null;
+
+    if (isDesktopOrMobile) {
+      const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image-desktop');
+      modalFeaturedImage.src = work.featuredImage;
+
+      modalCloseIcon = addElement('img', modalWorkCard, 'modal-close-icon-desktop');
+      modalCloseIcon.src = './img/Disabled.png';
+
+      const modalWorkCardDesktop = addElement('div', modalWorkCard, 'work-card-desktop');
+      const modalWorkCardTitle = addElement('h3', modalWorkCardDesktop, 'work-card-title-desktop');
+      modalWorkCardTitle.innerHTML = work.name;
+
+      const modalWorkCardButton1 = addElement('a', modalWorkCardDesktop, 'modal-work-card-button-desktop');
+      modalWorkCardButton1.innerHTML = 'See Live';
+      modalWorkCardButton1.href = work.linkToLiveVersion;
+
+      const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
+      modalWorkCardButtonImg1.src = './img/see live icon.png';
+
+      const modalWorkCardButton2 = addElement('a', modalWorkCardDesktop, 'modal-work-card-button-desktop');
+      modalWorkCardButton2.innerHTML = 'See Source';
+      modalWorkCardButton2.href = work.linkToSource;
+
+      const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
+      modalWorkCardButtonImg2.src = './img/see source icon.png';
+    } else {
+      const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image');
+      modalFeaturedImage.src = work.featuredImage;
+
+      modalCloseIcon = addElement('a', modalWorkCard, 'modal-close-icon');
+      modalCloseIcon.classList.add('fa');
+      modalCloseIcon.classList.add('fa-times');
+
+      const modalWorkCardTitle = addElement('h3', modalWorkCard, 'work-card-title');
+      modalWorkCardTitle.innerHTML = work.name;
+    }
+
+    const modalWorkCardTags = addElement('ul', modalWorkCard, 'work-card-tags');
+    modalWorkCardTags.classList.add('nobull');
+
     workTechnologies.forEach((technology) => {
-      const workCardTag = addElement('li', workCardTags, 'work-card-tag');
-      workCardTag.innerHTML = technology;
+      const modalWorkCardTag = addElement('li', modalWorkCardTags, 'work-card-tag');
+      modalWorkCardTag.innerHTML = technology;
     });
-    const workCardButton = addElement('button', workCard, 'work-card-button');
-    workCardButton.innerHTML = 'See Project';
 
-    // open modal window
+    const modalWorkCardDescr = addElement('p', modalWorkCard, 'work-card-descr');
+    modalWorkCardDescr.innerHTML = work.description;
 
-    workCardButton.addEventListener('click', () => {
-      const isDesktopOrMobile = isHidden('.logo');
+    if (!isDesktopOrMobile) {
+      const modalWorkCardButton1 = addElement('a', modalWorkCard, 'modal-work-card-button');
+      modalWorkCardButton1.innerHTML = 'See Live';
+      modalWorkCardButton1.href = work.linkToLiveVersion;
 
-      const modalWorkContainer = document.querySelector('.modal-work-container');
+      const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
+      modalWorkCardButtonImg1.src = './img/see live icon.png';
 
-      modalWorkContainer.classList.add('modal');
-      modalWorkContainer.classList.remove('hide');
-      const modalWorkItem = addElement('div', modalWorkContainer, 'modal-work-item');
-      const modalWorkCard = addElement('div', modalWorkItem, 'work-card');
+      const modalWorkCardButton2 = addElement('a', modalWorkCard, 'modal-work-card-button');
+      modalWorkCardButton2.innerHTML = 'See Source';
+      modalWorkCardButton2.href = work.linkToSource;
 
-      let modalCloseIcon = null;
+      const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
+      modalWorkCardButtonImg2.src = './img/see source icon.png';
+    }
 
-      if (isDesktopOrMobile) {
-        const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image-desktop');
-        modalFeaturedImage.src = work.featuredImage;
-
-        modalCloseIcon = addElement('img', modalWorkCard, 'modal-close-icon-desktop');
-        modalCloseIcon.src = './img/Disabled.png';
-
-        const modalWorkCardDesktop = addElement('div', modalWorkCard, 'work-card-desktop');
-        const modalWorkCardTitle = addElement('h3', modalWorkCardDesktop, 'work-card-title-desktop');
-        modalWorkCardTitle.innerHTML = work.name;
-
-        const modalWorkCardButton1 = addElement('a', modalWorkCardDesktop, 'modal-work-card-button-desktop');
-        modalWorkCardButton1.innerHTML = 'See Live';
-        modalWorkCardButton1.href = work.linkToLiveVersion;
-
-        const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
-        modalWorkCardButtonImg1.src = './img/see live icon.png';
-
-        const modalWorkCardButton2 = addElement('a', modalWorkCardDesktop, 'modal-work-card-button-desktop');
-        modalWorkCardButton2.innerHTML = 'See Source';
-        modalWorkCardButton2.href = work.linkToSource;
-
-        const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
-        modalWorkCardButtonImg2.src = './img/see source icon.png';
-      } else {
-        const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image');
-        modalFeaturedImage.src = work.featuredImage;
-
-        modalCloseIcon = addElement('a', modalWorkCard, 'modal-close-icon');
-        modalCloseIcon.classList.add('fa');
-        modalCloseIcon.classList.add('fa-times');
-
-        const modalWorkCardTitle = addElement('h3', modalWorkCard, 'work-card-title');
-        modalWorkCardTitle.innerHTML = work.name;
-      }
-
-      const modalWorkCardTags = addElement('ul', modalWorkCard, 'work-card-tags');
-      modalWorkCardTags.classList.add('nobull');
-
-      workTechnologies.forEach((technology) => {
-        const modalWorkCardTag = addElement('li', modalWorkCardTags, 'work-card-tag');
-        modalWorkCardTag.innerHTML = technology;
-      });
-
-      const modalWorkCardDescr = addElement('p', modalWorkCard, 'work-card-descr');
-      modalWorkCardDescr.innerHTML = work.description;
-
-      if (!isDesktopOrMobile) {
-        const modalWorkCardButton1 = addElement('a', modalWorkCard, 'modal-work-card-button');
-        modalWorkCardButton1.innerHTML = 'See Live';
-        modalWorkCardButton1.href = work.linkToLiveVersion;
-
-        const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
-        modalWorkCardButtonImg1.src = './img/see live icon.png';
-
-        const modalWorkCardButton2 = addElement('a', modalWorkCard, 'modal-work-card-button');
-        modalWorkCardButton2.innerHTML = 'See Source';
-        modalWorkCardButton2.href = work.linkToSource;
-
-        const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
-        modalWorkCardButtonImg2.src = './img/see source icon.png';
-      }
-
-      modalCloseIcon.addEventListener('click', () => {
-        modalWorkContainer.classList.add('hide');
-        modalWorkContainer.removeChild(modalWorkContainer.firstElementChild);
-      });
+    modalCloseIcon.addEventListener('click', () => {
+      modalWorkContainer.classList.add('hide');
+      modalWorkContainer.removeChild(modalWorkContainer.firstElementChild);
     });
   });
-};
+});
 
 // Popup menu
 
@@ -216,11 +214,13 @@ const currentFormMsg = document.querySelector('#msg');
 const currentFormFields = document.querySelectorAll('.input-field');
 
 function loadDataFromLocalStorage() {
-  const dataLoaded = JSON.parse(localStorage.getItem(storageKey));
-  currentFormName.value = dataLoaded.name;
-  currentFormEmail.value = dataLoaded.email;
-  currentFormMsg.value = dataLoaded.msg;
-}
+  let dataLoaded = JSON.parse(localStorage.getItem(storageKey));
+  if (dataLoaded !==null) {
+    currentFormName.value = dataLoaded.name;
+    currentFormEmail.value = dataLoaded.email;
+    currentFormMsg.value = dataLoaded.msg;
+  }
+};
 
 function saveDataToLocalStorage() {
   const dataSaved = {
