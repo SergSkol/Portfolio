@@ -214,13 +214,13 @@ const currentFormMsg = document.querySelector('#msg');
 const currentFormFields = document.querySelectorAll('.input-field');
 
 function loadDataFromLocalStorage() {
-  let dataLoaded = JSON.parse(localStorage.getItem(storageKey));
-  if (dataLoaded !==null) {
+  const dataLoaded = JSON.parse(localStorage.getItem(storageKey));
+  if (dataLoaded !== null) {
     currentFormName.value = dataLoaded.name;
     currentFormEmail.value = dataLoaded.email;
     currentFormMsg.value = dataLoaded.msg;
   }
-};
+}
 
 function saveDataToLocalStorage() {
   const dataSaved = {
