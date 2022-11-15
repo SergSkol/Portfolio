@@ -1,6 +1,6 @@
 # Portfolio
 
-> There is SergSkol's Portfolio
+> There is SergSkol's Portfolio. There I described my skills and projects, as an example.
 
 ## Built With
 
