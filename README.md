@@ -2,6 +2,14 @@
 
 > There is SergSkol's Portfolio. There I described my skills and projects, as an example.
 
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/106581139/202182770-3b1457e8-649c-459b-ad24-3b049ac09abb.png)
+
+![image](https://user-images.githubusercontent.com/106581139/202182946-a8a60c1a-55f9-44e7-9a12-aae9465deb36.png)
+
+![image](https://user-images.githubusercontent.com/106581139/202183092-20446e35-efb1-428f-ad02-5129d566ad5b.png)
+
 ## Built With
 
 - HTML, CSS, JavaScript  
