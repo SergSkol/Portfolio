@@ -217,7 +217,7 @@ body {
 }
 
 .work-card-image {
-  width: 92%;
+  height: 200px;
   margin: 4%;
 }
 
@@ -404,7 +404,7 @@ body {
 .resume-button {
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
+  /* line-height: 24px; */
   width: 159px;
   height: 48px;
   background: #008552;
@@ -415,6 +415,8 @@ body {
   color: #fff;
   margin-bottom: 24px;
   transition: all 0.5s ease-out;
+  text-decoration: none;
+  line-height: 3em;
 }
 
 .resume-button:active {
