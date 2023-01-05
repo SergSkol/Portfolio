@@ -6,7 +6,7 @@ body {
 }
 
 .body-background {
-  background-image: url('img/contact-me.png');
+  background-image: url("img/contact-me.png");
   background-position: 100% 96%;
   background-repeat: no-repeat;
 }
@@ -53,7 +53,7 @@ body {
   overflow: hidden;
   background: #fff;
   mix-blend-mode: normal;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
   border-radius: 20px;
 }
 
@@ -71,12 +71,12 @@ body {
   right: 32px;
 }
 
-.menuItem {
+.menu-item {
   margin: 20px;
   text-align: start;
 }
 
-.menuItem a {
+.menu-item a {
   display: inline-block;
   text-decoration: none;
   color: #3a4a42;
@@ -89,7 +89,7 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  background-image: url('./img/header-illsutration-mobile.png');
+  background-image: url("./img/header-illsutration-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -232,7 +232,7 @@ body {
   text-align: center;
   flex-wrap: wrap;
   justify-content: left;
-  margin: 0 24px 0 24px;
+  margin: 0 24px;
   padding: 4px;
 }
 
@@ -257,7 +257,7 @@ body {
 }
 
 .work-card-descr {
-  margin: 0 24px 30px 24px;
+  margin: 0 24px 30px;
 }
 
 .work-card-button {
@@ -343,7 +343,7 @@ body {
   text-align: start;
   letter-spacing: 0.03em;
   color: #fff;
-  margin: 24px 6px 24px 6px;
+  margin: 24px 6px;
   text-decoration: none;
   padding: 10px;
 }
@@ -378,7 +378,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url('./img/about-me.png');
+  background-image: url("./img/about-me.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -404,6 +404,7 @@ body {
 .resume-button {
   font-weight: 500;
   font-size: 17px;
+
   /* line-height: 24px; */
   width: 159px;
   height: 48px;
@@ -608,7 +609,7 @@ body {
   }
 
   .headline {
-    background-image: url('./img/Header-llustration-desktop.png');
+    background-image: url("./img/Header-llustration-desktop.png");
   }
 
   .headline-text {
@@ -620,7 +621,7 @@ body {
   }
 
   .about-me {
-    background-image: url('./img/illustration about me desktop.png');
+    background-image: url("./img/illustration about me desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -638,7 +639,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin: 24px 42px 24px 24px;
-    padding: 0 0 300px 0;
+    padding: 0 0 300px;
   }
 
   .contact-me-text {
@@ -664,7 +665,7 @@ body {
   }
 
   .body-background {
-    background-image: url('img/contact-me-desktop.png');
+    background-image: url("img/contact-me-desktop.png");
     background-position: 100% 96%;
     background-repeat: no-repeat;
   }

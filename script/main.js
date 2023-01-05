@@ -1,7 +1,7 @@
 const works = [
   {
     name: 'Space Travelers Hub',
-    description: `Space Traveler's Hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Application is working with the real live data from the SpaceX API.`,
+    description: 'Space Travelers Hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Application is working with the real live data from the SpaceX API.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 1.png',
     technologies: ['GitHub', 'Javascript', 'React', 'Redux', 'Versel'],
     linkToLiveVersion: 'https://space-travel-pearl.vercel.app/',
@@ -9,7 +9,7 @@ const works = [
   },
   {
     name: 'Bookstore',
-    description: `Book Store is a website that allows users to: Display a list of books. Add a book. Remove a selected book. We use API to store data.`,
+    description: 'Book Store is a website that allows users to: Display a list of books. Add a book. Remove a selected book. We use API to store data.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 2.png',
     technologies: ['GitHub', 'Javascript', 'React', 'Redux', 'Versel'],
     linkToLiveVersion: 'https://bookstore-khaki.vercel.app/',
@@ -25,7 +25,7 @@ const works = [
   },
   {
     name: 'Bio Cells: Two Colony Game of Live',
-    description: `Biocells is based on John Conway's Game of Life. But with ability to create two colony of live cells in the same field.`,
+    description: 'Biocells is based on John Conway"s Game of Life. But with ability to create two colony of live cells in the same field.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 4.png',
     technologies: ['GitHub', 'Git', 'Javascript', 'VSCode', 'Terminal'],
     linkToLiveVersion: 'https://sergskol.github.io/biocells/dist/',
@@ -33,7 +33,7 @@ const works = [
   },
   {
     name: 'Math Magicians: Calculator and Random Math Quotes',
-    description: `Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote. By building this application, we use React.`,
+    description: 'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote. By building this application, we use React.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 5.png',
     technologies: ['GitHub', 'Javascript', 'React', 'Terminal', 'VSCode'],
     linkToLiveVersion: 'https://math-magic-puce.vercel.app/',
@@ -41,7 +41,7 @@ const works = [
   },
   {
     name: 'S.Peterson School of Modern Art',
-    description: `This web site was created for exhibition of contemporary art works, which to be open on-line on the base of S.Peterson School of Modern Art.`,
+    description: 'This web site was created for exhibition of contemporary art works, which to be open on-line on the base of S.Peterson School of Modern Art.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 6.png',
     technologies: ['GitHub', 'Javascript', 'VSCode', 'W3Scool', 'Microverse'],
     linkToLiveVersion: 'https://sergskol.github.io/capstone1/',
