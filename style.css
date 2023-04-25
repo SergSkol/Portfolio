@@ -414,7 +414,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-  margin-bottom: 24px;
+  margin-bottom: 300px;
   transition: all 0.5s ease-out;
   text-decoration: none;
   line-height: 3em;
@@ -591,8 +591,11 @@ body {
     font-weight: 600;
     font-size: 10px;
     line-height: 28px;
+    position: sticky;
+    background-color: #fff;
   }
 
+  .menu-home,
   .menu-portfolio,
   .menu-about,
   .menu-contact {
@@ -602,6 +605,7 @@ body {
     transition: all 0.3s ease-out;
   }
 
+  .menu-home:hover,
   .menu-portfolio:hover,
   .menu-about:hover,
   .menu-contact:hover {
