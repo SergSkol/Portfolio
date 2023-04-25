@@ -1,5 +1,13 @@
 const works = [
   {
+    name: 'OnBudget: Budget control app',
+    description: 'The OnBudget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    featuredImage: './img/snapshots/Snapshoot Portfolio 5.png',
+    technologies: ['GitHub', 'Ruby on Rails', 'Javascript', 'Terminal'],
+    linkToLiveVersion: 'https://budget-app-ror-fc01.onrender.com/',
+    linkToSource: 'https://github.com/SergSkol/budget-app-ror',
+  },
+  {
     name: 'Space Travelers Hub',
     description: 'Space Travelers Hub is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Application is working with the real live data from the SpaceX API.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 1.png',
@@ -19,7 +27,7 @@ const works = [
     name: 'My Meals',
     description: 'My Meals is about building own web application based on an external API. Data is preserved thanks to the external API service.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 3.png',
-    technologies: ['GitHub', 'Javascript', 'FontAwesome', 'VSCode', 'API'],
+    technologies: ['GitHub', 'Javascript', 'VSCode', 'API', 'Terminal'],
     linkToLiveVersion: 'https://sergskol.github.io/myMeals/dist/',
     linkToSource: 'https://github.com/SergSkol/myMeals',
   },
@@ -32,18 +40,10 @@ const works = [
     linkToSource: 'https://github.com/SergSkol/biocells',
   },
   {
-    name: 'Math Magicians: Calculator and Random Math Quotes',
-    description: 'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote. By building this application, we use React.',
-    featuredImage: './img/snapshots/Snapshoot Portfolio 5.png',
-    technologies: ['GitHub', 'Javascript', 'React', 'Terminal', 'VSCode'],
-    linkToLiveVersion: 'https://math-magic-puce.vercel.app/',
-    linkToSource: 'https://github.com/SergSkol/math-magicians',
-  },
-  {
     name: 'S.Peterson School of Modern Art',
     description: 'This web site was created for exhibition of contemporary art works, which to be open on-line on the base of S.Peterson School of Modern Art.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 6.png',
-    technologies: ['GitHub', 'Javascript', 'VSCode', 'W3Scool', 'Microverse'],
+    technologies: ['GitHub', 'Javascript', 'VSCode', 'W3Scool'],
     linkToLiveVersion: 'https://sergskol.github.io/capstone1/',
     linkToSource: 'https://github.com/SergSkol/capstone1',
   },
@@ -172,19 +172,19 @@ works.forEach((work) => {
 const menuIcon = document.querySelector('#menuIcon');
 const closeIcon = document.querySelector('#closeIcon');
 const menuBox = document.querySelector('#menuBox');
-const menuItems = document.querySelectorAll('.menuItem');
+const menuItems = document.querySelectorAll('.menu-item');
 
 menuIcon.addEventListener('click', () => {
-  menuBox.classList.toggle('open-menu');
+  menuBox.classList.add('open-menu');
 });
 
 closeIcon.addEventListener('click', () => {
-  menuBox.classList.toggle('open-menu');
+  menuBox.classList.remove('open-menu');
 });
 
 menuItems.forEach((item) => {
   item.addEventListener('click', () => {
-    menuBox.classList.toggle('open-menu');
+    menuBox.classList.remove('open-menu');
   });
 });
 
