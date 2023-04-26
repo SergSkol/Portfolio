@@ -43,7 +43,7 @@ const works = [
     name: 'S.Peterson School of Modern Art',
     description: 'This web site was created for exhibition of contemporary art works, which to be open on-line on the base of S.Peterson School of Modern Art.',
     featuredImage: './img/snapshots/Snapshoot Portfolio 6.png',
-    technologies: ['GitHub', 'Javascript', 'VSCode', 'W3Scool'],
+    technologies: ['GitHub', 'Git', 'Javascript', 'VSCode', 'W3Scool'],
     linkToLiveVersion: 'https://sergskol.github.io/capstone1/',
     linkToSource: 'https://github.com/SergSkol/capstone1',
   },
@@ -111,6 +111,7 @@ works.forEach((work) => {
       const modalWorkCardButton1 = addElement('a', modalWorkCardDesktop, 'modal-work-card-button-desktop');
       modalWorkCardButton1.innerHTML = 'See Live';
       modalWorkCardButton1.href = work.linkToLiveVersion;
+      modalWorkCardButton1.target = '_blank';
 
       const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
       modalWorkCardButtonImg1.src = './img/see live icon.png';
@@ -118,6 +119,7 @@ works.forEach((work) => {
       const modalWorkCardButton2 = addElement('a', modalWorkCardDesktop, 'modal-work-card-button-desktop');
       modalWorkCardButton2.innerHTML = 'See Source';
       modalWorkCardButton2.href = work.linkToSource;
+      modalWorkCardButton2.target = '_blank';
 
       const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
       modalWorkCardButtonImg2.src = './img/see source icon.png';
@@ -148,6 +150,7 @@ works.forEach((work) => {
       const modalWorkCardButton1 = addElement('a', modalWorkCard, 'modal-work-card-button');
       modalWorkCardButton1.innerHTML = 'See Live';
       modalWorkCardButton1.href = work.linkToLiveVersion;
+      modalWorkCardButton1.target = '_blank';
 
       const modalWorkCardButtonImg1 = addElement('img', modalWorkCardButton1, 'modal-work-card-button-img');
       modalWorkCardButtonImg1.src = './img/see live icon.png';
@@ -155,6 +158,7 @@ works.forEach((work) => {
       const modalWorkCardButton2 = addElement('a', modalWorkCard, 'modal-work-card-button');
       modalWorkCardButton2.innerHTML = 'See Source';
       modalWorkCardButton2.href = work.linkToSource;
+      modalWorkCardButton2.target = '_blank';
 
       const modalWorkCardButtonImg2 = addElement('img', modalWorkCardButton2, 'modal-work-card-button-img');
       modalWorkCardButtonImg2.src = './img/see source icon.png';

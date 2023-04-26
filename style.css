@@ -140,11 +140,11 @@ body {
   text-decoration: none;
   margin: 24px;
   padding: 1px;
-  transition: font-size 1s;
+  transition: font-size 0.3s;
 }
 
 .social:hover {
-  font-size: 50px;
+  box-shadow: 1px 8px 16px rgb(54 179 127 / 48%);
 }
 
 .button-normal {
@@ -177,18 +177,13 @@ body {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  transition: all 0.5s ease-out;
-}
-
-.work-item:hover {
-  transform: scale(1.03);
 }
 
 .work-card {
   background: #fff;
   border-radius: 8px;
   padding-bottom: 20px;
-  transition: all 0.5s ease-in-out;
+  height: 100%;
 }
 
 .work-card-desktop {
@@ -202,6 +197,7 @@ body {
   text-align: center;
   color: #172b4d;
   margin: 12px;
+  height: 15%;
 }
 
 .work-card-title-desktop {
@@ -222,16 +218,21 @@ body {
 }
 
 .work-card-image-desktop {
-  width: 96%;
+  height: 40vh;
   margin-top: 78px;
   border-radius: 8px;
+  transition: all 0.3s ease-out;
+}
+
+.work-card-image-desktop:active {
+  height: 80vh;
 }
 
 .work-card-tags {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   margin: 0 24px;
   padding: 4px;
 }
@@ -273,7 +274,7 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .work-card-button:active {
@@ -297,7 +298,6 @@ body {
   height: 100%;
   overflow: scroll;
   background: #c1c7d0;
-  transition: all 0.5s ease-out;
 }
 
 .hide {
@@ -317,7 +317,7 @@ body {
 .modal-close-icon {
   text-align: end;
   font-size: 200%;
-  color: #fff;
+  color: #67798e;
   position: absolute;
   top: 10vw;
   right: 10vw;
@@ -340,12 +340,12 @@ body {
   background: #008552;
   border: 3px solid #008552;
   border-radius: 4px;
-  text-align: start;
+  text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
   margin: 24px 6px;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
 }
 
 .modal-work-card-button-desktop {
@@ -357,12 +357,17 @@ body {
   background: #008552;
   border: 3px solid #008552;
   border-radius: 4px;
-  text-align: start;
+  text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
   margin: 24px 30px 24px 6px;
   text-decoration: none;
   padding: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.modal-work-card-button-desktop:hover {
+  box-shadow: 1px 8px 16px rgb(54 179 127 / 48%);
 }
 
 .modal-work-card-button-img {
@@ -401,7 +406,8 @@ body {
   margin: 12px;
 }
 
-.resume-button {
+.resume-button,
+.intouch-button {
   font-weight: 500;
   font-size: 17px;
 
@@ -415,20 +421,27 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 300px;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
   text-decoration: none;
   line-height: 3em;
 }
 
-.resume-button:active {
+.intouch-button {
+  height: 58px;
+}
+
+.resume-button:active,
+.intouch-button:active {
   border: 3px solid #28352f;
 }
 
-.resume-button:hover {
+.resume-button:hover,
+.intouch-button:hover {
   box-shadow: 1px 8px 16px rgb(54 179 127 / 48%);
 }
 
-.resume-button:focus {
+.resume-button:focus,
+.intouch-button:focus {
   background: #172b4d;
   border: 3px solid #172b4d;
 }
@@ -487,7 +500,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 24px 42px 24px 24px;
+  margin: 24px;
 }
 
 .contact-me-text {
