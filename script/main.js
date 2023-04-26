@@ -100,6 +100,7 @@ works.forEach((work) => {
     if (isDesktopOrMobile) {
       const modalFeaturedImage = addElement('img', modalWorkCard, 'work-card-image-desktop');
       modalFeaturedImage.src = work.featuredImage;
+      modalFeaturedImage.title = 'Press on image for zoom';
 
       modalCloseIcon = addElement('img', modalWorkCard, 'modal-close-icon-desktop');
       modalCloseIcon.src = './img/Disabled.png';
